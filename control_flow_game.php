@@ -9,6 +9,10 @@ while ($end_game != true) {
 	echo "Pick a number between 0 and 9\n";
 	$my_number = rand(0,9);
 	$your_number = rtrim(fgets(STDIN));
+
+	if ($your_number > 9 || $your_number < 0) {
+		echo "Invalid number $your_number. Your number must be between 0 and 9";
+}
 }
 
 ?>
