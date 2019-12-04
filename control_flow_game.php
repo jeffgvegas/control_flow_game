@@ -16,7 +16,9 @@ while ($end_game != true) {
 		echo "It's a tie! Play again?\n";
 }	elseif ($my_number < $your_number) {
 		echo "You cheated! Play again.\n";
-}	
+}	elseif ($my_number > $your_number) {
+		exit("I won! Bye now.\n");
+}
 }
 
 ?>
